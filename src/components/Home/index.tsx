@@ -1,5 +1,6 @@
 import * as C from "./styles";
 import { TfiLink } from "react-icons/tfi";
+import profile from "/src/images/profile.png";
 
 const Home = () => {
   return (
@@ -7,7 +8,7 @@ const Home = () => {
       <div className="name">Patrick Burin Rodriguez</div>
       <div className="text">
         <C.Description>
-          <img src="src/images/profile.png" className="image" />
+          <img src={profile} className="image" />
           <div className="description">
             Olá! Meu nome é Patrick Burin Rodriguez e sou desenvolvedor front
             end. Nasci em 2000 no Brasil no sul de Santa Catarina, mais
@@ -73,15 +74,11 @@ const Home = () => {
                 <div className="titleProject">
                   Site Estofaria do Ananias <TfiLink size={30} />
                 </div>
-                <div className="descriptionProject">
-                  Desenvolvimento de um site para uma estofaria automotiva.{" "}
-                  <br />
-                  <div className="tools">
-                    <div className="tool">React</div>
-                    <div className="tool">TypeScript</div>
-                    <div className="tool">Styled-Components</div>
-                    <div className="tool">Material UI</div>
-                  </div>
+                <div className="tools">
+                  <div className="tool">React</div>
+                  <div className="tool">TypeScript</div>
+                  <div className="tool">Styled-Components</div>
+                  <div className="tool">Material UI</div>
                 </div>
                 <div className="buttons">
                   <strong>Disponível em:</strong>
@@ -94,17 +91,13 @@ const Home = () => {
                 <div className="titleProject">
                   Jogo adivinhar a bandeira <TfiLink size={30} />
                 </div>
-                <div className="descriptionProject">
-                  Desenvolvimento de um mini jogo onde o usuário deve adivinhar
-                  a bandeira. <br />
-                  <div className="tools">
-                    <div className="tool">Java</div>
-                    <div className="tool">Spring Boot </div>
-                    <div className="tool">React</div>
-                    <div className="tool">Typescript</div>
-                    <div className="tool">Material UI</div>
-                    <div className="tool">Styled-Component</div>
-                  </div>
+                <div className="tools">
+                  <div className="tool">Java</div>
+                  <div className="tool">Spring Boot </div>
+                  <div className="tool">React</div>
+                  <div className="tool">Typescript</div>
+                  <div className="tool">Material UI</div>
+                  <div className="tool">Styled-Component</div>
                 </div>
                 <div className="buttons">
                   <strong>Disponível em:</strong>

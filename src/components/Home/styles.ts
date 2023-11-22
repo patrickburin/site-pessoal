@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../device";
 
 export const Container = styled.div`
   display: flex;
@@ -26,6 +27,12 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
   }
+
+  @media ${device.tablet} {
+    .name {
+      font-size: 40px;
+    }
+  }
 `;
 
 export const Description = styled.div`
@@ -38,10 +45,20 @@ export const Description = styled.div`
   .image {
     background-color: #3f3f3f;
     border-radius: 30px;
+    padding: 10px;
   }
   .description {
     width: 550px;
     text-align: justify;
+  }
+
+  @media ${device.tablet} {
+    flex-direction: column;
+
+    .description {
+      width: 90%;
+      font-size: 22px;
+    }
   }
 `;
 
@@ -49,7 +66,7 @@ export const Experiences = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #3f3f3f;
-  width: 1000px;
+  width: 80%;
   border-radius: 10px;
   padding: 15px 30px;
   gap: 5px;
@@ -88,16 +105,34 @@ export const Experiences = styled.div`
   hr {
     width: 100%;
   }
+
+  @media ${device.tablet} {
+    .experiencesTitle {
+      font-size: 28px;
+    }
+
+    .titleJob {
+      font-size: 22px;
+    }
+
+    .date {
+      font-size: 20px;
+    }
+
+    .descriptionJob {
+      font-size: 20px;
+    }
+  }
 `;
 
 export const Projects = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   background-color: #3f3f3f;
   border-radius: 10px;
-  padding: 15px;
+  width: 80%;
+  padding: 15px 30px;
   gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 6px 6px 80px 8px;
 
@@ -168,5 +203,28 @@ export const Projects = styled.div`
     font-size: 16px;
     background-color: #fff;
     cursor: pointer;
+  }
+
+  @media ${device.tablet} {
+    padding: 10px 13px;
+    width: 90%;
+
+    .projectsTitle {
+      font-size: 28px;
+    }
+
+    .project {
+      width: 350px;
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    .tools {
+      font-size: 18px;
+    }
+
+    .buttons {
+      font-size: 16px;
+    }
   }
 `;
