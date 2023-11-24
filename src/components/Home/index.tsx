@@ -1,24 +1,89 @@
 import * as C from "./styles";
 import { TfiLink } from "react-icons/tfi";
 import profile from "/src/images/profile.png";
+import logoInstagram from "/src/images/logoInstagram.png";
+import { FaWhatsapp, FaGithub } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
+import { CiLinkedin } from "react-icons/ci";
 
 const Home = () => {
   return (
     <C.Container>
-      <div className="name">Patrick Burin Rodriguez</div>
-      <div className="text">
-        <C.Description>
-          <img src={profile} className="image" />
-          <div className="description">
-            Olá, meu nome é Patrick, tenho 23 anos e nasci em Araranguá, no sul
-            de Santa Catarina - Brasil. Estou cursando a 7ª fase de Ciências da
-            Computação na UNESC, em Críciúma-SC. Sou desenvolvedor front end no
-            momento e desejo me tornar full stack ou mobile. No meu tempo livre
-            eu gosto de coisas bem diversificadas, como praticar esportes e ir
-            para a academia mas também assistir séries e esportes. Também gosto
-            bastante de praia, viajar e principalmente sair com meus amigos.
+      <C.Start>
+        <C.Name>
+          <div className="letters">
+            <div className="letter">P</div>
+            <div className="letter">a</div>
+            <div className="letter">t</div>
+            <div className="letter">r</div>
+            <div className="letter">i</div>
+            <div className="letter">c</div>
+            <div className="letter">k</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div className="letter">B</div>
+            <div className="letter">u</div>
+            <div className="letter">r</div>
+            <div className="letter">i</div>
+            <div className="letter">n</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div className="letter">R</div>
+            <div className="letter">o</div>
+            <div className="letter">d</div>
+            <div className="letter">r</div>
+            <div className="letter">i</div>
+            <div className="letter">g</div>
+            <div className="letter">u</div>
+            <div className="letter">e</div>
+            <div className="letter">z</div>
           </div>
-        </C.Description>
+        </C.Name>
+
+        <C.Developer>Desenvolvedor</C.Developer>
+
+        <C.SocialMedia>
+          <div className="icon">
+            <FaWhatsapp size={50} color="#25D366" />
+          </div>
+          <div className="icon">
+            <FaGithub size={50} />
+          </div>
+          <div className="icon">
+            <IoLogoVercel size={50} />
+          </div>
+          <div className="icon">
+            <CiLinkedin size={50} />
+          </div>
+          <div className="icon">
+            <img src={logoInstagram} />
+          </div>
+        </C.SocialMedia>
+      </C.Start>
+
+      <div className="text">
+        <div className="imageText">
+          <C.Description>
+            <img src={profile} className="image" />
+            <div className="description">
+              Olá! Meu nome é Patrick e sou estudande de Ciências da Computação,
+              na Unesc. Atualmente sou desenvolvedor front end na OAIS Cloud e
+              trabalho com TypeScript e React. Fora do mundo da programação, eu
+              gosto bastante de ir à academia, jogar bola e handeboll. Também
+              assisto bastante série e filmes. Gosto bastante de estar com minha
+              família e meus amigos, para fazer desde um churrasco até sair para
+              uma festa. Gosto muito de ir à praia e por morar em litoral, acabo
+              aproveitando bastante o mar, calor e o verão.
+            </div>
+          </C.Description>
+        </div>
+
         <div className="experiences">
           <C.Experiences>
             <div className="experiencesTitle">Minhas experiências</div>
@@ -37,10 +102,14 @@ const Home = () => {
                 da empresa norueguesa PIQL para preservação de dados digitais
                 por longos períodos de tempo. Atuo no desenvolvimento do portal
                 da OAIS, onde os usuários têm acesso a documentos e assinatura
-                digital. <br />
-                <br />
-                <strong>Tecnologias:</strong> TypeScript, React,
-                Styled-Components, Material UI, Git, GitHub, Figma.
+                digital.
+                <div className="tools">
+                  <strong>Tecnologias:</strong>
+                  <div className="tool">React</div>
+                  <div className="tool">TypeScript</div>
+                  <div className="tool">Styled-Components</div>
+                  <div className="tool">Material UI</div>
+                </div>
               </div>
             </div>
             <hr />
@@ -57,8 +126,12 @@ const Home = () => {
                 Também fazia o intermedio entre os funcionários e o time de
                 desenvolvimento, ajudando os desenvolvedores e também o time de
                 produto da empresa.
-                <br /> <br />
-                <strong>Tecnologias:</strong> Notion, Figma, Trello.
+                <div className="tools">
+                  <strong>Tecnologias:</strong>
+                  <strong>Tecnologias:</strong>
+                  <div className="tool">Figma</div>
+                  <div className="tool">Trello</div>
+                </div>
               </div>
             </div>
           </C.Experiences>
