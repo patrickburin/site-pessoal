@@ -4,7 +4,7 @@ import { device } from "../../device";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background: #272727;
+  background: #000;
   color: #fff;
   gap: 20px;
   font-size: 18px;
@@ -26,11 +26,13 @@ export const Container = styled.div`
   .experiences {
     display: flex;
     justify-content: center;
+    min-height: 100vh;
   }
 
   .imageText {
     display: flex;
     justify-content: center;
+    min-height: 100vh;
   }
 
   @media ${device.tablet} {
@@ -198,6 +200,7 @@ export const Description = styled.div`
   background-color: #3f3f3f;
   display: flex;
   flex-direction: row;
+  height: min-content;
   width: 80%;
   justify-content: center;
   gap: 20px;
@@ -309,6 +312,7 @@ export const Projects = styled.div`
   background-color: #3f3f3f;
   border-radius: 10px;
   width: 80%;
+  height: min-content;
   padding: 10px 20px;
   gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 6px 6px 80px 8px;
@@ -331,7 +335,7 @@ export const Projects = styled.div`
   .project {
     background-color: #272727;
     display: flex;
-    width: 500px;
+    width: 480px;
     flex-direction: column;
     border-radius: 10px;
     font-size: 16px;
