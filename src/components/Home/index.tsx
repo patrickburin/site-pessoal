@@ -1,5 +1,5 @@
 import * as C from "./styles";
-import { TfiLink } from "react-icons/tfi";
+// import { TfiLink } from "react-icons/tfi";
 import profile from "/src/images/profile.png";
 import logoInstagram from "/src/images/logoInstagram.png";
 import { FaWhatsapp, FaGithub } from "react-icons/fa";
