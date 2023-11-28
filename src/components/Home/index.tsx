@@ -5,48 +5,28 @@ import logoInstagram from "/src/images/logoInstagram.png";
 import { FaWhatsapp, FaGithub } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { CiLinkedin } from "react-icons/ci";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
+  const [typeEffect] = useTypewriter({
+    words: ["TypeScript", "JavaScript", "React"],
+    loop: 0,
+    typeSpeed: 100,
+    deleteSpeed: 100,
+  });
+
   return (
     <C.Container>
       <C.Start>
-        <C.Name>
-          <div className="letters">
-            <div className="letter">P</div>
-            <div className="letter">a</div>
-            <div className="letter">t</div>
-            <div className="letter">r</div>
-            <div className="letter">i</div>
-            <div className="letter">c</div>
-            <div className="letter">k</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div className="letter">B</div>
-            <div className="letter">u</div>
-            <div className="letter">r</div>
-            <div className="letter">i</div>
-            <div className="letter">n</div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div className="letter">R</div>
-            <div className="letter">o</div>
-            <div className="letter">d</div>
-            <div className="letter">r</div>
-            <div className="letter">i</div>
-            <div className="letter">g</div>
-            <div className="letter">u</div>
-            <div className="letter">e</div>
-            <div className="letter">z</div>
-          </div>
-        </C.Name>
+        <C.Name>Patrick Burin Rodriguez</C.Name>
 
-        <C.Developer>Desenvolvedor</C.Developer>
+        <C.Developer>
+          Desenvolvedor
+          <span>
+            {typeEffect}
+            <Cursor />
+          </span>
+        </C.Developer>
 
         <C.SocialMedia>
           <div className="icon">
@@ -75,7 +55,7 @@ const Home = () => {
               Olá! Meu nome é Patrick e sou estudande de Ciências da Computação,
               na Unesc. Atualmente sou desenvolvedor front end na OAIS Cloud e
               trabalho com TypeScript e React. Fora do mundo da programação, eu
-              gosto bastante de ir à academia, jogar bola e handeboll. Também
+              gosto bastante de ir à academia, jogar bola e handebol. Também
               assisto bastante série e filmes. Gosto bastante de estar com minha
               família e meus amigos, para fazer desde um churrasco até sair para
               uma festa. Gosto muito de ir à praia e por morar em litoral, acabo

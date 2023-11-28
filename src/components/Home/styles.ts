@@ -52,147 +52,29 @@ export const Start = styled.div`
 `;
 
 export const Name = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #000;
-
-  .letters {
-    display: flex;
-    flex-direction: row;
-    font-size: 70px;
-    gap: 3px;
-    font-family: monospace;
-  }
-
-  .letter {
-    animation: animation 16s infinite ease-in-out;
-  }
-
-  .letter:nth-of-type(2) {
-    animation-delay: 0.2s;
-  }
-  .letter:nth-of-type(3) {
-    animation-delay: 0.4s;
-  }
-  .letter:nth-of-type(4) {
-    animation-delay: 0.6s;
-  }
-  .letter:nth-of-type(5) {
-    animation-delay: 0.8s;
-  }
-  .letter:nth-of-type(6) {
-    animation-delay: 1s;
-  }
-  .letter:nth-of-type(7) {
-    animation-delay: 1.2s;
-  }
-  .letter:nth-of-type(8) {
-    animation-delay: 1.4s;
-  }
-  .letter:nth-of-type(9) {
-    animation-delay: 1.6s;
-  }
-  .letter:nth-of-type(10) {
-    animation-delay: 1.8s;
-  }
-  .letter:nth-of-type(11) {
-    animation-delay: 2s;
-  }
-  .letter:nth-of-type(12) {
-    animation-delay: 2.2s;
-  }
-  .letter:nth-of-type(13) {
-    animation-delay: 2.4s;
-  }
-  .letter:nth-of-type(14) {
-    animation-delay: 2.6s;
-  }
-  .letter:nth-of-type(15) {
-    animation-delay: 2.8s;
-  }
-  .letter:nth-of-type(16) {
-    animation-delay: 3s;
-  }
-  .letter:nth-of-type(17) {
-    animation-delay: 3.2s;
-  }
-  .letter:nth-of-type(18) {
-    animation-delay: 3.4s;
-  }
-  .letter:nth-of-type(19) {
-    animation-delay: 3.6s;
-  }
-  .letter:nth-of-type(20) {
-    animation-delay: 3.8s;
-  }
-  .letter:nth-of-type(21) {
-    animation-delay: 4s;
-  }
-  .letter:nth-of-type(22) {
-    animation-delay: 4.2s;
-  }
-  .letter:nth-of-type(23) {
-    animation-delay: 4.4s;
-  }
-  .letter:nth-of-type(24) {
-    animation-delay: 4.6s;
-  }
-  .letter:nth-of-type(25) {
-    animation-delay: 4.8s;
-  }
-  .letter:nth-of-type(26) {
-    animation-delay: 5s;
-  }
-  .letter:nth-of-type(27) {
-    animation-delay: 5.2s;
-  }
-  .letter:nth-of-type(28) {
-    animation-delay: 5.4s;
-  }
-  .letter:nth-of-type(29) {
-    animation-delay: 5.6s;
-  }
-  .letter:nth-of-type(30) {
-    animation-delay: 5.8s;
-  }
-  .letter:nth-of-type(31) {
-    animation-delay: 6s;
-  }
-
-  @keyframes animation {
-    0% {
-      color: #fff;
-      text-shadow: 0 0 12px white, 0 0 50px white, 0 0 100px white;
-    }
-    15% {
-      color: white;
-      text-shadow: none;
-    }
-    70% {
-      color: black;
-      text-shadow: none;
-    }
-  }
-
-  .description {
-    font-size: 30px;
-    text-align: center;
-  }
+  text-align: center;
+  color: #fff;
+  font-size: 70px;
 `;
 
 export const Developer = styled.div`
   display: flex;
   font-size: 32px;
   gap: 10px;
+
+  span {
+    color: #ff0000;
+  }
 `;
 
 export const SocialMedia = styled.div`
   display: flex;
+  gap: 15px;
 
   .icon {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 `;
 
@@ -231,13 +113,14 @@ export const Experiences = styled.div`
   flex-direction: column;
   background-color: #3f3f3f;
   width: 80%;
+  height: min-content;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 20px;
   gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 6px 6px 80px 8px;
 
   .experiencesTitle {
-    color: #808080;
+    color: #fff;
     font-size: 38px;
     font-weight: bold;
     text-align: center;
@@ -313,12 +196,12 @@ export const Projects = styled.div`
   border-radius: 10px;
   width: 80%;
   height: min-content;
-  padding: 10px 20px;
+  padding: 20px;
   gap: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 6px 6px 80px 8px;
 
   .projectsTitle {
-    color: #808080;
+    color: #fff;
     font-size: 38px;
     font-weight: bold;
     text-align: center;
