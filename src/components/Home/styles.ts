@@ -169,7 +169,7 @@ export const Experiences = styled.div`
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 16px;
     gap: 10px;
   }
 
