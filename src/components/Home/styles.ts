@@ -234,6 +234,7 @@ export const Projects = styled.div`
     font-size: 18px;
     font-weight: normal;
     gap: 10px;
+    height: 100%;
   }
 
   .titleProject {

@@ -178,28 +178,6 @@ const Home = () => {
               <div className="tool">Sockets</div>
             </div>
           </div>
-          <div className="project">
-            <div className="titleProject">
-              Estofaria do Ananias <GoLink size={30} />
-            </div>
-            Site de uma estofaria especializada em carros antigos
-            <div className="contentProject">
-              <div className="tool">TypeScript</div>
-              <div className="tool">React</div>
-              <div className="tool">Figma</div>
-            </div>
-          </div>
-          <div className="project">
-            <div className="titleProject">
-              Estofaria do Ananias <GoLink size={30} />
-            </div>
-            Site de uma estofaria especializada em carros antigos
-            <div className="contentProject">
-              <div className="tool">TypeScript</div>
-              <div className="tool">React</div>
-              <div className="tool">Figma</div>
-            </div>
-          </div>
         </div>
       </C.Projects>
     </C.Container>
